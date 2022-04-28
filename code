@@ -1,0 +1,128 @@
+ 
+         {% if product.id == 536964189404833 %}  
+          <!-- Video Gallery -->
+           <div class="slider center videoSlider">
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				<div>
+ 				  <a href="https://www.youtube.com/watch?v=kzYQxZPZtNM" class="mediabox">
+                     <img src="https://img.youtube.com/vi/kzYQxZPZtNM/sddefault.jpg">
+                     {% include 'icon-play' %}
+                  </a>  
+				</div>
+				 
+			</div>
+           {% endif   %}  
+				
+	
+          <style>
+            .videoSlider{}
+            .videoSlider .slick-slide{
+            position:relative;
+            }
+            .videoSlider .slick-slide a{
+              position: relative;
+              display: block;
+    			padding: 8px;
+            }
+            .videoSlider .slick-slide svg {
+                fill: #fff;
+                position: absolute;
+                bottom: 50%;
+                right: 50%;
+                transform: translate(50%, 50%);
+                height: 50px;
+                width: 75px;
+                background: #43434399;
+                padding: 13px;
+                border-radius: 10px;
+            }
+          </style>
+         
+ 
+
+          {% if template == 'product' %} 
+  <script src="{{ 'mediabox.js' | asset_url }}"></script>
+  
+  <script>
+    
+ $('.center').slick({ 
+  centerPadding: '30px',
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {  
+        centerPadding: '30px',
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: { 
+        centerPadding: '30px',
+        slidesToShow: 3
+      }
+    }
+  ]
+});
+    
+    MediaBox('.mediabox');
